@@ -1,0 +1,15 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    flex-grow: 1;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .image {
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+}

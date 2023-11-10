@@ -1,0 +1,40 @@
+.left-nav {
+  position: fixed;
+  top: 50%;
+  transform: translate(0px, -50%);
+  left: 0;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  gap: 10px;
+  .back-btn,
+  .home-btn {
+    border: 1px solid teal;
+    background-color: #ccc;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 8px 8px 0;
+    padding: 0 10px;
+    transition: all 0.3s;
+    svg {
+      path {
+        fill: teal;
+      }
+    }
+    &:hover {
+      padding: 0 30px;
+      opacity: 1;
+      background-color: teal;
+      transition: all 0.3s;
+      svg {
+        transform: scale(1.2);
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

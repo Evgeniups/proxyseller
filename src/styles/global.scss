@@ -1,0 +1,136 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  padding: 12px;
+  background-color: #f1f1f1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+  &:hover {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+}
+
+.filter-sort {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  .search {
+    height: 40px;
+    width: 100%;
+    border: 1px solid teal;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid teal;
+    font-size: 28px;
+  }
+  button {
+    white-space: nowrap;
+    outline: none;
+    border-radius: 3px;
+    background-color: teal;
+    color: #fff;
+    height: 40px;
+    transition: all 0.3s;
+    &:hover {
+      background-color: darken($color: teal, $amount: 2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+html body .active-link {
+  text-decoration: underline;
+  color: teal;
+  pointer-events: none;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 500;
+  color: #1a1a1a;
+  text-decoration: inherit;
+}
+a:hover {
+  color: teal;
+}
+
+body {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.header,
+.footer {
+  padding: 10px 0;
+  background-color: #213547;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main {
+  flex: 1 1 100%;
+}

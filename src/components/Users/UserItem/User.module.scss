@@ -1,0 +1,35 @@
+.user {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-weight: 600;
+  }
+
+  .body {
+    flex-grow: 1;
+    min-height: 100px;
+    border-bottom: 1px solid teal;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    .btn {
+      border: 1px solid teal;
+      color: #fff;
+      background-color: teal;
+      font-weight: 400;
+      border-radius: 3px;
+      padding: 5px 10px;
+
+      &:hover {
+        transition: all 0.5s;
+        background-color: #fff;
+        color: teal;
+      }
+    }
+  }
+}

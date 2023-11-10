@@ -1,0 +1,19 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+
+  .title {
+    align-self: center;
+    font-size: 24px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid teal;
+  }
+  .image {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+}

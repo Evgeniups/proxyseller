@@ -1,0 +1,46 @@
+.header {
+  background-color: #474757;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @media (max-width: 768px) {
+    gap: 10px;
+  }
+  @media (max-width: 480px) {
+    gap: 5px;
+  }
+
+  a {
+    color: #fff;
+    padding: 0 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: all 0.3s;
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
+    &:hover {
+      color: teal;
+    }
+  }
+}
+
+.main {
+  padding: 0 50px;
+  flex-grow: 1;
+}
+
+.footer {
+  font-size: 16px;
+  background-color: #474757;
+  color: #fff;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
